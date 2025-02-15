@@ -1,0 +1,14 @@
+public class {
+
+public void main()
+{
+
+ int num =12;
+ int num2 =23;
+ int num3= num+num2;
+ Console.WriteLine(num3);
+
+
+
+}
+}
