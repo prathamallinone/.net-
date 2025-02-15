@@ -1,2 +1,84 @@
-this is my progarm
-sts
+//this is my progarm
+using System;
+using System.Security.AccessControl;
+public class Opreter
+{
+    public static void Main()
+    {
+        Console.Write("enter the fast number ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("enter the secend number");
+        int num2 = Convert.ToInt32(Console.ReadLine()); 
+
+        Console.Write("enter the oprethinon(+,-,/,%,*)");
+        char num3 = Convert.ToChar(Console.ReadLine());
+
+        switch (num3)
+        {
+            case '%':
+                Console.WriteLine(num1 % num2);
+                break;
+            case '/':
+                Console.WriteLine(num1 / num2);
+                break;
+            case '*':
+                Console.WriteLine(num1 * num2);
+                break;
+            case '+':
+                Console.WriteLine(num1 + num2);
+                break;
+            case '-':
+                if (num2 > 2)
+                { Console.WriteLine("biger then 2"); }
+                else
+                {
+                    Console.WriteLine("this input small then 2");
+                }
+
+
+                Console.WriteLine(num1 - num2);
+                break;
+
+            default:
+
+                if (num1 > 0)
+                {
+                    Console.WriteLine("if bock");
+
+                }
+                else if (num2 > 0)
+
+                {
+                    Console.WriteLine("ELSE BOOK");
+                }
+                else
+                {
+                    Console.WriteLine("YOUR RONG PERSON");
+                }
+
+                Console.WriteLine("enter the vilid input but your good student so you "); break;
+
+
+        }
+
+    }
+}
+
+        
+        
+        
+        
+
+
+
+
+      
+
+
+    
+
+
+
+
+
+        
