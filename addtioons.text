@@ -1,2 +1,50 @@
 //this is my git larnning 
-public 
+
+using System;
+public class Gym
+{
+   public static void Main(string[] args)
+    {
+       Gym gym = new Gym();
+        gym.bookshow();
+        gym.verifyshowseet();
+    
+        gym.showtime();
+        gym.luanchtime();
+    }
+
+    public void bookshow()
+    {
+        System.Console.WriteLine("book fast show");
+        Console.ReadLine();
+
+    }
+    
+    public void verifyshowseet()
+    {
+      bool staus=true ;
+        if (staus)
+        {
+            Console.WriteLine("verify" + staus);
+            staus = false ;
+        }
+
+    }
+
+
+    public void showtime()
+    { System.Console.WriteLine("the time is 12pm");
+        Console.ReadLine();
+    
+    
+    }
+
+    public void luanchtime()
+    {
+        System.Console.WriteLine("the luanch time is 2 pm");
+        Console.ReadLine();
+
+    }
+
+
+}
