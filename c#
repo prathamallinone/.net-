@@ -9,6 +9,5 @@ public void main()
  Console.WriteLine(num3);
 
 
-
 }
 }
