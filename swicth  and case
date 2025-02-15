@@ -1,0 +1,63 @@
+gitusing System.ComponentModel;
+using System.Security.Cryptography;
+
+
+/*How It Works:
+Find the Largest Number:
+Take three numbers as input and find the largest among them using if-else..*/
+
+
+//prathamallinone
+
+namespace Part1
+{
+    public class Progarm
+    {
+        public static void Main()
+        {
+            Progarm p1=new Progarm();
+            p1.Opreter();
+        }
+        public  void Opreter()
+        {
+            Console.Write("enter the number 1:");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter the nummber2:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter the number3:");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            int largest;
+            if (num1 >=num2 && num1>=num3 )
+            {
+                largest = num1;
+                Console.WriteLine("the largest number is :" + largest);
+            }
+            else if (num2>=num3 &&num2>=num1)
+            {
+                largest = num2;
+                    Console.WriteLine("the largest number is :" + largest); 
+            }
+            else
+            {
+                largest = num3;
+                Console.WriteLine("the largest number is :"+largest);
+            }
+            
+        }
+    }
+      
+}
+    
+
+
+
+
+        
+
+
+    
+        
+
+
+
+
