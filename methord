@@ -1,0 +1,120 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace pratham
+{
+    public class Tata
+    {
+        public int carNumber;
+        public static void Main()
+        {
+
+
+            Tata t = new Tata();
+            t.tatai20("ramesh raju", 67876795, "balaghat");
+            t.tataiCURVV("mukesh rahu", 49494044, "bhopal");
+            t.tataAltrozRACER("vickky tiwari", 88894948, "indor");
+            t.tataiCURVV("manish", 99484944, "palasiya");
+            t.tatai20("deepa thakur", 2223424, "bharwali");
+
+        }
+
+        public void tatai20(string clintName, int clintNUmber, string clintCity)
+        {
+
+            Console.WriteLine("enter the 4 digit car number");
+            int carNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            if (carNumber<=9999)
+            {
+
+                Console.WriteLine(clintName);
+                Console.WriteLine(clintNUmber);
+                Console.WriteLine(clintCity);
+
+                string carname = "tatai20";
+                string modal = "tata120 new";
+                long carparice = 699999;
+
+                Console.WriteLine("car name:" + carname + " " + "car modal: " + modal + " " + " car number:" + carNumber + "CAR Parice:" + carparice);
+
+
+                Console.WriteLine("*****************************************************************************************************");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("enter onlyr 4 digit Car number");
+            }
+
+
+        }
+
+
+        public void tataiCURVV(string clintName, int clintNUmber, string clintCity)
+        {
+            Console.WriteLine("enter the 4 digit car number");
+            int carNumber = Convert.ToInt32(Console.ReadLine());
+            if (carNumber <=9999)
+            {
+
+                Console.WriteLine(clintName);
+                Console.WriteLine(clintNUmber);
+                Console.WriteLine(clintCity);
+
+                string carname = "tataiCURVV";
+                string modal = "CURVV new";
+
+
+
+                string Carparice = "₹9,99,990";
+                Console.WriteLine("car name:" + carname + " " + "car modal: " + modal + " " + " car number:" + carNumber + "car Starting from :" + Carparice);
+
+                Console.WriteLine("*****************************************************************************************************");
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine("enter onlyr 4 digit Car number");
+            }
+
+
+
+        }
+        
+        
+        public void tataAltrozRACER(string clintName, int clintNUmber, string clintCity)
+        {
+            Console.WriteLine("enter the 4 digit car number");
+            int carNumber = Convert.ToInt32(Console.ReadLine());
+            if (carNumber <=9999)
+            {
+                Console.WriteLine(clintName);
+                Console.WriteLine(clintNUmber);
+                Console.WriteLine(clintCity);
+
+                string carname = "tataAltrozRACER";
+                string modal = "tataAltrozRACER A1";
+
+
+                string Carparice = "₹6,64,990";
+
+                Console.WriteLine("car name:" + carname + " " + "car modal: " + modal + " " + " car number:" + carNumber + " " + "car Starting from :" + Carparice);
+
+
+                Console.WriteLine("*****************************************************************************************************");
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine("enter onlyr 4 digit Car number");
+            }
+
+
+
+        }
+    }
+    }
