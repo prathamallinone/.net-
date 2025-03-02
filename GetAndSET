@@ -1,26 +1,48 @@
-using GetEx;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using System.Xml.Linq;
 
-namespace GetAndSet
+namespace GetEx
 {
-    class MainF
+    public class GetE
     {
-        class MainGet
+        int num = 12212;//fild
+        string name = "Ram";//variyebal
+        public void setnum(int Num = 2323)//set is use for set the valuefor in private fild an change the value am get the 
+                                          //value .set ssyntex= public void setDatamenberName(int a){}
         {
-            public static void Main()
-            {
-                GetE g = new GetE();
-                g.setnum(18052002);
-                g.setname();
-                Console.WriteLine(g.getnum(), g.getname());
-                Console.ReadLine();
-
-            }
+             
+            Console.WriteLine(Num);
+           
         }
+        public void setname(string Name="RAM ji")
+        {
+            name = Name;
+            
+        }
+        public string   getnum()
+        {
+            return this.name;
+        }
+        public int   getname()
+        {
+            return this.num;
+        }
+     
+        
 
     }
+    class MainGet
+    {
+        public static void Main()
+        {
+            GetE g = new GetE();
+            g.setnum(18052002);
+            g.setname();
+            Console.WriteLine(g.getnum(), g.getname());
+            Console.ReadLine();
+
+        }
+    }
 }
+
