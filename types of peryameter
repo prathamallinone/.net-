@@ -1,4 +1,4 @@
-namespace Types
+/*namespace Types
 {
    public  class Car
     {
@@ -23,6 +23,38 @@ namespace Types
             string name = "raju";
             Car C = new Car();
             C.D1(number, name );
+            Console.WriteLine(number+name);
+        }
+    }
+}/*
+
+call by refrence 
+
+namespace Types
+{
+   public  class Car
+    {
+        //prathamallinone
+        public  void D1( ref  int number , ref string Name)//call by ref  
+        { 
+            
+            
+            number = 2332;//call by ref me jo bhi valve hoti hai change  hoti hai .
+          Name = "sonali";
+           
+         }
+             
+       
+    }
+
+    class MainF
+    {
+        public static void Main()
+        {
+            int number = 66766;
+            string name = "raju";
+            Car C = new Car();
+            C.D1(ref number,ref  name );
             Console.WriteLine(number+name);
         }
     }
