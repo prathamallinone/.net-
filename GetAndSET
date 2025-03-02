@@ -1,0 +1,26 @@
+using GetEx;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GetAndSet
+{
+    class MainF
+    {
+        class MainGet
+        {
+            public static void Main()
+            {
+                GetE g = new GetE();
+                g.setnum(18052002);
+                g.setname();
+                Console.WriteLine(g.getnum(), g.getname());
+                Console.ReadLine();
+
+            }
+        }
+
+    }
+}
