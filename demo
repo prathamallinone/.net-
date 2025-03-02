@@ -1,0 +1,72 @@
+using System;
+using System.Data;
+using System.Xml.Linq;
+
+namespace GetEx
+{   //prathamallinone
+    public class GetE
+    {
+        public string Home { set; get; }//atometic propertis 
+
+
+
+        private int _Age=33;//properti 
+        public int   age
+        {
+            set//set methord 
+            {
+                age = _Age=67;
+            }
+
+
+            get//get methord
+            {
+                return 66;
+            }
+
+        }
+        int num = 12212;//fild
+        string name = "Ram";//variyebal
+        public void setnum(int Num = 2323)//set is use for set the valuefor in private fild an change the value am get the 
+                                          //value .set ssyntex= public void setDatamenberName(int a){}
+        {
+             
+            Console.WriteLine(Num);
+           
+        }
+        public void setname(string Name="RAM ji")
+        {
+            name = Name;
+            
+        }
+        public string   getnum()
+        {
+            return this.name;
+        }
+        public int   getname()
+        {
+            return this.num;
+        } 
+        
+     
+        
+
+    }
+    class MainGet//class 
+    {
+        public static void Main()//main methord 
+        {
+            GetE g = new GetE();
+            g.setnum(18052002);
+            g.setname();
+            Console.WriteLine(g.getnum(), g.getname());
+           
+            Console.WriteLine(g.age);
+            Console.ReadLine();
+            Console.WriteLine("prase the enter bothen");
+            g.Home = "meraghar";
+            Console.WriteLine(g.Home);
+        }
+    }
+}
+
